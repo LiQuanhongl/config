@@ -1,0 +1,19 @@
+server:
+  port: 8001
+spring:
+  application:
+    name: graph
+
+  neo4j:
+    uri: bolt://121.37.91.184:7687
+#    uri: neo4j://localhost:7687
+    authentication:
+      password: SeniorSE2021
+#      password: John
+      username: neo4j
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://121.37.91.184:8761/eureka
+
